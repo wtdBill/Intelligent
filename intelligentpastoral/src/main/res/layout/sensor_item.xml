@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sensor_layout"
+    android:layout_width="560px"
+    android:layout_height="430px"
+    android:layout_margin="12px"
+    android:background="@color/air_h" >
+
+    <ImageView
+        android:id="@+id/sensor_iv_icon"
+        android:layout_width="110px"
+        android:layout_height="110px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25px"
+        android:layout_marginTop="30px"
+        android:src="@drawable/icon_humi" />
+
+    <TextView
+        android:id="@+id/sensor_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="65px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:background="@drawable/sensor_bg"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="50px" />
+
+    <TextView
+        android:id="@+id/sensor_tv_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="52"
+        android:textColor="@color/font_sensor_value"
+        android:textSize="100px" />
+
+    <TextView
+        android:id="@+id/sensor_tv_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sensor_tv_value"
+        android:layout_alignBottom="@+id/sensor_tv_value"
+        android:layout_toRightOf="@+id/sensor_tv_value"
+        android:text="C"
+        android:textColor="@color/font_sensor_value"
+        android:textSize="40px" />
+
+</RelativeLayout>

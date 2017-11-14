@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titile_bar" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/sensor_tv_station_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100px"
+            android:layout_marginTop="100px"
+            android:gravity="center"
+            android:text="dsfjksdjfkj"
+            android:textSize="50px" />
+
+        <include layout="@layout/sensor_recyclerview" />
+    </LinearLayout>
+
+</LinearLayout>

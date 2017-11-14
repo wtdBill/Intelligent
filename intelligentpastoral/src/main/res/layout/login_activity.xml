@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titile_bar" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="74px"
+            android:background="@color/cc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="134px"
+            android:background="@android:color/white" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:text="@string/user_name"
+                android:textSize="50px" />
+
+            <EditText
+                android:id="@+id/login_et_user_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@null"
+                android:hint="@string/user_name"
+                android:inputType="text"
+                android:paddingLeft="30px"
+                android:textColorHint="@color/color_hint"
+                android:textSize="50px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="30px"
+            android:background="@color/view_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="134px"
+            android:background="@android:color/white" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:text="@string/password"
+                android:textSize="50px" />
+
+            <EditText
+                android:id="@+id/login_et_password"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@null"
+                android:inputType="numberPassword"
+                android:paddingLeft="30px"
+                android:textSize="50px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cc" />
+
+        <TextView
+            android:id="@+id/login_tv_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="90px"
+            android:text="@string/forget_password_"
+            android:textColor="@color/forget_pass"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/login_btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="90px"
+            android:background="@drawable/green_bg"
+            android:text="@string/login"
+            android:textColor="@color/f1" />
+
+        <TextView
+            android:id="@+id/login_tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="120px"
+            android:text="@string/now_register"
+            android:textColor="@color/green"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

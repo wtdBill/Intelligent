@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/login_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/titile_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="41px"
+        android:layout_marginRight="41px"
+        android:layout_marginTop="20px"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/main_tv_sensor_station"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:textColor="@color/main_sensor_font"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:id="@+id/main_layout_sensor_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/white_bg"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:padding="10px"
+            android:paddingRight="16px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/all"
+                android:textColor="@android:color/black"
+                android:textSize="40px"/>
+
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_gravity="center"
+                android:src="@drawable/arrow_right"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/sensor_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="25px"
+        android:layout_marginRight="25px"
+        android:layout_weight="2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="41px"
+        android:layout_marginRight="41px"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/main_tv_video_station"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:textColor="@color/main_sensor_font"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:id="@+id/main_layout_video_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/white_bg"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:padding="10px"
+            android:paddingRight="16px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="20px"
+                android:gravity="center"
+                android:text="@string/all"
+                android:textColor="@android:color/black"
+                android:textSize="40px"/>
+
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_gravity="center"
+                android:src="@drawable/arrow_right"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/monitor_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="40px"
+        android:layout_marginLeft="41px"
+        android:layout_marginRight="41px"
+        android:layout_weight="1.8">
+
+        <include
+            layout="@layout/default_layout" />
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+    </FrameLayout>
+
+</LinearLayout>
